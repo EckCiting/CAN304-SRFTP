@@ -1,5 +1,6 @@
 import ftplib
 import hashlib
+import sys
 from hashlib import pbkdf2_hmac
 from socket import *
 from AESUtil import AESUtil
@@ -17,6 +18,10 @@ def send_tcp_request(message):
 
 def init():
     parser = argparse.ArgumentParser()
+    if len(sys.argv) < 8 and len(sys.argv)!= 2:
+        print('Missing Parameters')
+        parser.print_usage()
+        sys.exit(1)
     parser.add_argument('-u', '--username', help='FTP username')
     parser.add_argument('-p', '--password', help='FTP user password')
     parser.add_argument('-f', '--filename', help='Request file')
