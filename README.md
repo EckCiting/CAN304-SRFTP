@@ -8,7 +8,10 @@ pip3 install -r requirements.txt
 
 ## Help: 
 
+```bash
+cd client
 python SR-FTP.py -h
+```
 
 
 
