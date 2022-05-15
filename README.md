@@ -1,3 +1,11 @@
+## Install requirements:
+
+```python
+pip3 install -r requirements.txt
+```
+
+
+
 ## Help: 
 
 python SR-FTP.py -h
@@ -6,13 +14,13 @@ python SR-FTP.py -h
 
 ## Example:
 
-Server start: 
+Server start (in server folder): 
 
 ```bash
 python Server.py
 ```
 
-Client usage: 
+Client usage (in client folder): 
 
 ```bash
 python SR-FTP.py -u ftpuser -p nopassword -f hello.txt -s 127.0.0.1
